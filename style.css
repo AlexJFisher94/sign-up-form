@@ -1,3 +1,9 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --accent-color: rgb(150, 150, 150);
+    --text-color: rgb(187, 187, 187);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +27,7 @@
 .logo-container {
     display: flex;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 25vh;
     width: 100%;
     padding: 20px;
@@ -44,14 +50,14 @@
 }
 
 .photo-credit {
-    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: .5%;
     font-family: sans-serif;
-    color: white;
     font-size: 12px;
+    width: 100%;
+    bottom: .5%;
+    color: white;
 }
 
 .right {
@@ -60,16 +66,15 @@
     overflow: auto;
     padding-top: 10px;
     width: 60vw;
-    background-color: rgb(0, 0, 0);
-    padding-top: 10px;
+    background-color: black;
 }
 
-.form-info p {
-    font-family: 'Poppins', sans-serif;;
+.info {
+    font-family: var(--font-family);
     font-size: 16px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    color: rgb(187, 187, 187);
+    color: var(--text-color);
     width: 85%;
     margin-top: 10vh;
     margin-left: 3vw;
@@ -77,22 +82,20 @@
 
 .form-container {
     background-color: black;
-    margin: 10px;
-    margin-top: 10vh;
-    padding: 30px;
-    padding-top: 10px;
+    margin: 10vh 10px 10px 10px;
+    padding: 10px 30px 30px 30px;
 }
 
-.form {
+.input-container {
     display: flex;
     flex-flow: row wrap;
 }
 
 .form-container p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     letter-spacing: 1px;
     word-spacing: 1px;
-    color: rgb(187, 187, 187);
+    color: var(--text-color);
     margin-bottom: 15px;
     
 }
@@ -100,24 +103,23 @@
 .input {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family);
     width: 45%;
     color: gray;
-    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 2px;
-    margin: 10px;
-    margin-left: 0px;
+    margin: 10px 10px 10px 0px;
 }
 
 input {
+    width: 20vw;
     height: 25px;
-    border-radius: 5px;
     border: .5px solid rgb(128, 128, 128, .6);
+    border-radius: 5px;
     background-color: black;
     color: gray;
     letter-spacing: 1px;
-    width: 20vw;
 }
 
 input:focus {
@@ -128,23 +130,23 @@ input:focus {
 button {
     width: 200px;
     height: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
     background-color: black;
-    color: rgb(150, 150, 150);
-    border: 2px solid rgb(150, 150, 150);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     border-radius: 6px;
     margin-top: 60px;
 }
 
 button:hover {
-    background-color: rgb(150, 150, 150);
+    background-color: var(--accent-color);
     color: black;
     cursor: pointer;
 }
 
 .log-in {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     font-size: 14px;
     letter-spacing: 1px;
     word-spacing: 1px;
@@ -153,5 +155,9 @@ button:hover {
 
 a {
     text-decoration: none;
-    color:rgb(221, 221, 221);
+    color:rgb(213, 168, 168);
+}
+
+a:hover {
+    color: white;
 }
