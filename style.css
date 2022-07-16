@@ -2,6 +2,7 @@
     --font-family: 'Poppins', sans-serif;
     --accent-color: rgb(150, 150, 150);
     --text-color: rgb(187, 187, 187);
+    --blue-color: rgb(168, 190, 213);
 }
 
 * {
@@ -131,7 +132,7 @@ input {
 
 input:focus {
     outline: none;
-    border: 1px solid gray;
+    border: 1px solid rgb(168, 190, 213);
 }
 
 button {
@@ -140,15 +141,15 @@ button {
     font-family: var(--font-family);
     font-size: 16px;
     background-color: black;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: var(--blue-color);
+    border: 2px solid rgb(168, 190, 213);
     border-radius: 6px;
     margin: 60px 0 30px 3vw;
     transition: all 0.25s ease-in-out;
 }
 
 button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--blue-color);
     color: black;
     cursor: pointer; 
 }
@@ -162,7 +163,7 @@ button:hover {
 
 a {
     text-decoration: none;
-    color:rgb(168, 190, 213);
+    color: var(--blue-color);
 }
 
 a:hover {
