@@ -33,11 +33,11 @@
                     <div class="input-container">
                         <div class="input">
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" required>
+                            <input type="text" name="first-name" id="first-name"required>
                         </div>
                         <div class="input">
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                         <div class="input">
                             <label for="email">Email</label>
@@ -56,9 +56,7 @@
                             <input type="password" name="confirm-pass" id="confirm-pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                         </div>
                     </div>
-                    <div class="submit-btn">
-                        <button type="submit" form="sign-up">Create Account</button>
-                    </div>
+                    <button type="submit" form="sign-up">Create Account</button>
                 </form>
                 <p class="log-in">Already have an account? <a href="#">Log in</a></p>
             </div>
